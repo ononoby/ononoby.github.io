@@ -1,0 +1,386 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+    <title>球球小店发布页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- for-mobile-apps -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- //for-mobile-apps -->
+    <style type="text/css">
+        /* reset */
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,a
+
+        ddress,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u
+
+        ,i,dl,dt,dd,ol,nav ul,nav
+
+        li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas
+
+        ,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+
+        time,mark,audio,video
+
+        {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+        article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section
+
+        {display: block;}
+        ol,ul{list-style:none;margin:0px;padding:0px;}
+        blockquote,q{quotes:none;}
+        blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+        table{border-collapse:collapse;border-spacing:0;}
+        /* start editing from here */
+        a{text-decoration:none;}
+        .txt-rt{text-align:right;}/* text align right */
+        .txt-lt{text-align:left;}/* text align left */
+        .txt-center{text-align:center;}/* text align center */
+        .float-rt{float:right;}/* float right */
+        .float-lt{float:left;}/* float left */
+        .clear{clear:both;}/* clear float */
+        .pos-relative{position:relative;}/* Position Relative */
+        .pos-absolute{position:absolute;}/* Position Absolute */
+        .vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+        .vertical-top{	vertical-align:top;}/* vertical align top */
+        nav.vertical ul li{	display:block;}/* vertical menu */
+        nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+        img{max-width:100%;}
+        /*end reset*/
+
+        body{padding: 0;margin: 0;background: #272727;font: 400 16px/1.7 "Microsoft JhengHei",
+
+        sans-serif;}
+
+        h1,h2,h3,h4,h5,h6{
+            margin:0;
+        }
+        p{
+            margin:0;
+        }
+        ul{
+            margin:0;
+            padding:0;
+        }
+        label{
+            margin:0;
+        }
+        /*-- main --*/
+        .main{
+            padding:50px 0;
+        }
+        .main h1{
+            font-size: 40px;
+            text-align: center;
+            color: #55ACEE;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .content{
+            margin:0 auto;
+            width:28%;
+            background:#fff;
+        }
+        p.footer {
+            font-size:16px;
+            text-align: center;
+            color: #000;
+            font-weight: 500;
+            margin-top:30px;
+        }
+        p.footer a {
+            color:#55ACEE;
+        }
+        p.footer a:hover {
+            color: #000;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+        }
+        .content-top h2{
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+            background: #55acee;
+            padding: 12px 0;
+        }
+        .content-top p {
+            text-align: center;
+            font-size: 16px;
+            color: #000;
+            margin-top: 15px;
+        }
+        .content-top ul li{
+            display: block;
+            font-size: 15px;
+            color: #000;
+            line-height: 1.8em;
+            padding: 1em 0 1em 1em;
+            border-bottom: 1px solid #E2E0DE;
+        }
+        .content-top ul li a{
+            color:#000;
+            font-weight: 400;
+        }
+        .content-top ul li a i{
+            color: #55ACEE;
+            font-style: normal;
+            display: block;
+            margin: 2px 0;
+        }
+
+        .content-top ul li span{
+            display:block;
+            color:#999;
+        }
+        .content-top{
+            padding:1.5em;
+        }
+        .content-top p a {
+            color: #55ACEE;
+            margin-left: 5px;
+        }
+
+        /*-- responsive media queries --*/
+
+        @media (max-width: 1440px){
+
+        }
+        @media (max-width: 1366px){
+            .content {
+                width: 31%;
+            }
+        }
+        @media (max-width: 1280px){
+            .content {
+                width: 32%;
+            }
+        }
+        @media (max-width: 1080px){
+            .content {
+                width: 38%;
+            }
+            .main h1 {
+                font-size: 36px;
+            }
+            .content-top h2 {
+                font-size: 20px;
+                padding: 10px 0;
+            }
+            .content-top ul li,.content-top p,p.footer {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 1024px){
+
+        }
+        @media (max-width: 991px){
+
+        }
+        @media (max-width: 800px){
+            .main h1 {
+                font-size: 34px;
+            }
+            .content {
+                width: 46%;
+            }
+        }
+        @media (max-width: 768px){
+            .main {
+                padding: 90px 0;
+            }
+            .main h1 {
+                margin-bottom: 55px;
+            }
+            p.footer {
+                margin-top: 75px;
+            }
+        }
+        @media (max-width: 736px){
+            .main {
+                padding: 70px 0;
+            }
+            .main h1 {
+                margin-bottom: 45px;
+            }
+            .content {
+                width: 53%;
+            }
+            p.footer {
+                margin-top: 50px;
+            }
+        }
+        @media (max-width: 667px){
+            .main h1 {
+                font-size: 32px;
+                margin-bottom: 35px;
+            }
+            .main {
+                padding: 60px 0;
+            }
+            .content {
+                width: 57%;
+            }
+            .content-top h2 {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 640px){
+
+        }
+        @media (max-width: 600px){
+            .main h1 {
+                font-size: 30px;
+            }
+            .content-top {
+                padding: 1em;
+            }
+            .content {
+                width: 62%;
+            }
+        }
+        @media (max-width: 568px){
+            .content {
+                width: 68%;
+            }
+        }
+        @media (max-width: 480px){
+            .content {
+                width: 78%;
+            }
+            .main h1 {
+                font-size: 28px;
+            }
+            p.footer {
+                margin-top: 42px;
+            }
+        }
+        @media (max-width: 414px){
+            .content-top h2 {
+                font-size: 16px;
+            }
+            .content {
+                width: 85%;
+            }
+            .main {
+                padding: 50px 0;
+            }
+            p.footer {
+                line-height: 1.8em;
+                margin: 42px auto 0 auto;
+                width: 85%;
+            }
+        }
+        @media (max-width: 384px){
+            .main h1 {
+                font-size: 27px;
+            }
+            .content,p.footer {
+                width: 90%;
+            }
+            p.footer {
+                margin: 32px auto 0 auto;
+            }
+        }
+        @media (max-width: 375px){
+            .main h1 {
+                font-size: 26px;
+                margin-bottom: 25px;
+            }
+            .main {
+                padding: 45px 0;
+            }
+            .content,p.footer {
+                width: 92%;
+            }
+            .content-top h2 {
+                padding: 8px 0;
+            }
+        }
+        @media (max-width: 320px){
+            .main h1 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .content-top ul li{
+                padding: 1em 0 1em 1em;
+                background-size: 13% !important;
+            }
+            .content-top {
+                padding: 1.2em;
+            }
+            .content-top ul li, .content-top p, p.footer {
+                font-size: 13px;
+            }
+            .content, p.footer {
+                width: 90%;
+            }
+        }
+
+    </style>
+
+
+<body>
+<div class="main">
+    <h1>球球小店地址发布页</h1>
+    <div class="content">
+        <div class="content-top">
+            <h2>请大家收藏本页并截图保存<br>https://nononone.gitee.io/web</h2>
+            <ul>
+                <li>
+                    球球小店最新地址【主用】
+                    <a id="gw1" href="https://www.1233.work" target="_blank"><i>https://www.1233.work</i></a>
+                </li>
+                <li>
+                    球球小店最新地址【备用】
+                    <a href="http://95.169.14.206/down" target="_blank"><i>APP地址【支持安卓、iOS】</i></a>
+
+                </li>
+                <li>
+                    <strong>若QQ内无法直接打开，请复制地址到浏览器访问</strong>
+                </li>
+                <li>
+                    客服QQ
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=209577381&site=qq&menu=yes" target="_blank"><i>209577381</i></a>
+                </li>
+                <li>
+                    QQ通知群
+                    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=DP2pcoTj4idOk8NrDJV8WDqMqQKGh1YM&jump_from=webapi" target="_blank"><i>1047549928</i></a>
+                </li>
+                <li>
+                    <span>网址屏蔽严重，请大家收藏本页并截图，以防走失，请尽量使用火狐或谷歌浏览器进行访问 </span>
+                </li>
+                <li>
+                    友情链接：<br>
+
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <p class="footer">© 2021 莫离. All Rights Reserved</p>
+</div>
+
+<div style="display:none">[]</div>
+
+<script>
+    layer.open({
+        type: 1
+        ,title: false //不显示标题栏
+        ,closeBtn: false
+        ,area: 'auto'
+        ,shade: 0.8
+        ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+        ,btn: ['我知道了', '我会收藏好的']
+        ,btnAlign: 'c'
+        ,moveType: 1 //拖拽模式，0或者1
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">重要通知：<br>本页面为球球小店永久发布页，<br>希望各位网友收藏（按Ctrl+D键收藏），防止走丢^_^</div>'
+        ,success: function(layero){
+            var btn = layero.find('.layui-layer-btn');
+
+        }
+    });
+</script>
+</body></html>
+
